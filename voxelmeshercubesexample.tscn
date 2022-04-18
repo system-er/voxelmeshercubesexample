@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://source/voxelmeshercubesexample.cs" type="Script" id=1]
+
+[node name="voxelmeshercubesexample" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.752564, 0.198733, -0.627815, 0, 0.953375, 0.301788, 0.658519, -0.227115, 0.717476, -4.64873, 7.14255, 22.8752 )
+
+[node name="VoxelViewer" type="VoxelViewer" parent="Camera"]
+requires_collisions = false
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 0.109701, 0.846066, -0.521668, -0.184427, 0.533048, 0.82574, 0.976705, 0.00562548, 0.214514, -6.63712, 21.4616, 0 )
+light_energy = 4.754
+shadow_enabled = true
+spot_range = 143.605
